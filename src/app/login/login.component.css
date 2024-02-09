@@ -1,0 +1,88 @@
+/* Center the form on the page */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.capgemni{
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Style the labels */
+label {
+  font-weight: bold;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+/* Style the input fields */
+.form-control {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid rgb(16, 18, 17);
+  border-radius: 4px;
+}
+
+/* Highlight invalid fields with red border */
+.form-control.ng-invalid.ng-touched {
+  border-color: #ff0000;
+}
+
+/* Style the error messages */
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Style the submit button */
+.login-button {
+  background-color: #d01d1d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.login-button:disabled {
+  background-color: rgb(64, 53, 148);
+  cursor: not-allowed;
+}
+
+/* Other styles */
+.full-screen-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(85, 85, 119);
+  z-index: -1;
+}
+.e-library-header{
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+}
+
+.e-library-icon-2 {
+  width: 20px;
+  height: 20px; 
+}
+.e-library-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.powered-by {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 38px;
+}

@@ -1,0 +1,31 @@
+<div class="full-screen-bg"></div>
+<div class="login-container">
+  <div class="e-library-header">
+    <span style="padding-right: 5px;"><img src="../../assets/el.jpg" alt="E-library Icon" class="e-library-icon"></span>
+    <h1 class="e-library-text">E-Library</h1>
+
+  </div>
+  <div class="capgemni">
+    <h1 style="padding-right: 5px;" class="powered-by">Powered by Capgemini</h1>
+    <img src="../../assets/cap logo.jpg" alt="Cap-logo Icon" class="e-library-icon-2">
+  </div>
+  <form [formGroup]="loginForm" class="login-form">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+        <div *ngIf="email.errors?.required">Email is required.</div>
+        <div *ngIf="email.errors?.email">Invalid email format.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" formControlName="password" class="form-control">
+      <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+        <div *ngIf="password.errors?.required">Password is required.</div>
+        <div *ngIf="password.errors?.minlength">Password must be at least 6 characters long.</div>
+      </div>
+    </div>
+    <button type="submit" [disabled]="loginForm.invalid" (click)="onSubmit()" class="login-button">Login</button>
+  </form>
+</div>

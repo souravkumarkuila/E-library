@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-sm">
+    <div class="card" style="border-color: black; border-radius: 8px;">
+      <div class="card-body">
+        <app-cards></app-cards>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-5">
+
+    <p-card header="Top Subscribers by Points">
+
+      <table class="user-table">
+        <tr class="header-row">
+          <th>Name</th>
+          <th>Points</th>
+        </tr>
+
+        <tr *ngFor="let user of users let even = even" [ngClass]="{'even-row': even, 'odd-row': !even}">
+          <td>{{user.name}}</td>
+          <td>{{user.points}}</td>
+        </tr>
+      </table>
+
+    </p-card>
+
+  </div>
+  <div class="col-7">
+    <div class="card flex justify-content-center">
+      <p-chart type="pie" height="280px" [data]="data" [options]="options"></p-chart>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+/* navbar.component.css */
+.navbar {
+    background-color: #343a40;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .navbar .nav-link {
+    color: #fff;
+  }
+  
+  .navbar .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-left: 881px;
+    margin-bottom: -16px;
+
+  }
+  
+  .navbar .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  .capgemini-logo {
+    width: 10px;
+    height: 10px; 
+    margin-right: 5px;
+    vertical-align:middle;
+  }
+  .powered-by-text {
+    font-size: 12px;
+    color: #bbb;
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 0px;
+    vertical-align: top;
+
+  }
+  
+  .navbar .badge {
+    background-color: #dc3545;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    padding: 5px 10px;
+    border-radius: 20%;
+    color: #fff;
+  }
+ 
+  .size{
+    height:fit-content;
+  }
+  .fas fa-book{
+    width: 120px;
+    height: 1000;
+
+  }
+  .left-icon{
+    height: 50px;
+    width: 50px;
+    margin-left:100px;
+  }
+  .navbar-nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  

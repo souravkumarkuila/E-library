@@ -1,0 +1,58 @@
+<div class="card">
+  <div class="card-body">
+    <div class="text-center mx-auto">
+      <h5 class="card-title">Select From Your Active Subscription</h5>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Book ID</th>
+              <th>Title</th>
+              <th>Date</th>
+              <th>Some ID</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let book of books; let even = even" [ngClass]="{'even-row': even, 'odd-row': !even}">
+              <td>{{ book.bookId }}</td>
+              <td>{{ book.title }}</td>
+              <td>29 Mar 2020</td>
+              <td>1022242</td>
+              <td><button class="btn btn-primary" (click)="takeQuiz(book.bookId)">Take Quiz</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="sub" class="mt-5">
+  <div class="card">
+    <h4 class="text-center"> {{book}} </h4>
+    <div class="card-body-1">
+      <div class="text-center mx-auto">
+        <div *ngIf="currentQuestionIndex < questions.length">
+          <h3 class="card-title">{{ questions[currentQuestionIndex]?.question }}</h3>
+          <div class="options-container">
+            <label *ngFor="let option of questions[currentQuestionIndex]?.options; let i = index" class="form-check-label"
+                   [ngClass]="{
+                     'selected-option': selectedOptionIndex === i,
+                     'correct-option': selectedOptionIndex !== null && i === questions[currentQuestionIndex]?.answer,
+                     'incorrect-option': selectedOptionIndex !== null && i !== questions[currentQuestionIndex]?.answer && i === selectedOptionIndex
+                   }">
+              <input class="form-check-input mx-3" type="radio" [value]="i" [(ngModel)]="selectedOptionIndex" [ngModelOptions]="{standalone: true}">
+              {{ option }}
+            </label>
+          </div>
+          <button class="btn btn-primary" (click)="nextQuestion()">Next</button>
+        </div>
+        <div *ngIf="quizCompleted" class="mt-3">
+          <h2 class="card-title">Quiz Completed</h2>
+          <p class="card-text">Your score: {{ score }} / {{ questions.length }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

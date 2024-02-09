@@ -1,0 +1,107 @@
+.grey-bg {
+    background-color: #f2f2f2; /* Grey background color for alternate rows */
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #000; /* Black text color for table cells */
+}
+
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table th {
+    font-weight: bold;
+    background-color: rgb(60, 206, 69);
+}
+.card-title{
+    background-color: rgb(223, 24, 163);
+}
+
+.card {
+    border: none;
+    /* border: 5px solid #ccc; */
+    /* border-radius: 5px; */
+    padding: 10px;
+}
+.card-body{
+    background-color: grey;
+}
+.card-body-1{
+    background-color: rgb(172, 138, 203);
+}
+
+.slider-container {
+    display: flex;
+    width: 100%; /* The width will be calculated dynamically */
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 1;
+    min-width: 100%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.option {
+    margin: 5px ;
+}
+
+button {
+    margin-top: 10px;
+}
+.col-9{
+    padding: 0px;
+}  
+
+
+.selected-option {
+    background-color: #c2e2ff; /* Highlight selected option with light blue background */
+  }
+  
+  /* .correct-option {
+    background-color: #3075e4; /* Highlight correct option with green background */
+  /* }  */
+  
+  /* .incorrect-option {
+    background-color: #eb0c0c; /* Highlight incorrect option with red background */
+  /* }  */
+  
+  .even {
+    background-color: #f0f0f0; /* Define your preferred background color for grey rows */
+  }
+  
+  .odd {
+    background-color: #ffffff; /* Define your preferred background color for white rows */
+  }
+
+
+  
+  
+
+  
+
+
+
+
+
+  
+  
+  

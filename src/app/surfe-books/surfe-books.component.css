@@ -1,0 +1,52 @@
+.custom-border-color {
+    border: 3px solid #ff6347; /* Coral color with a 3px thickness */
+    border-radius: 8px;
+    margin-block-start: 10px /* Rounded corners */
+  }
+  
+  /* book-list.component.css */
+.card-link {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: -150px;
+  }
+
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }
+
+  .card-img-top{
+    width: 70px;
+    height: 100px;
+    margin-left: 166px;
+    margin-top: -102px;
+    margin-bottom: -65px;
+    
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: #beb8d7;
+    margin: 4px; /* Change this to your desired background color */
+  }
+.d-flex{
+  display:flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 7px;
+}
+.text-center {
+  text-align: center!important;
+  margin-left: 100px;
+}
+
+.bolded{
+  font-weight: bold;
+}
+
+
+  

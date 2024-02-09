@@ -1,0 +1,82 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header text-center">
+            <strong> {{bookDetails.title}} </strong>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Author: {{bookDetails.Author}}</li>
+                        <li class="list-group-item">Category: {{bookDetails.category}}</li>
+                        <li class="list-group-item">Publisher: Potter More</li>
+                        <li class="list-group-item">Date Published : June 26, 1997</li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-md-6">
+                    <p class="card-text">
+                        {{bookDetails.Description}}
+                    </p>
+                    <button class="btn btn-primary" (click)="sub=true">Subscribe</button>
+                </div>
+                <div class="col-md-2">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img [src]="bookDetails.img" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="sub" class="container mt-4">
+        <div class="card">
+            <div class="card-header text-center">
+                <strong>Harry Potter & The Half-Blood Prince (Subscription Form)
+                </strong>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="globalId" class="form-label text-end">Enter Global ID</label>
+                            <input placeholder="Enter Global Id" type="text" class="form-control" id="globalId"
+                                name="globalId">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="name" class="form-label text-end">Name</label>
+                            <input class="form-control" id="name" name="name">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="grade" class="form-label text-end">Grade</label>
+                            <input class="form-control" id="grade" name="grade">
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-4 mb-3">
+                            <label for="joining Date" class="form-label text-end">Joining Date</label>
+                            <input placeholder="joiningDate" class="form-control" id="joiningDate" name="joiningDate">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="empId" class="form-label text-end">Employee ID</label>
+                            <input type="text" class="form-control" id="empId" name="empId">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="supervisor" class="form-label text-end">Supervisor</label>
+                            <input type="text" class="form-control" id="supervisor" name="supervisor">
+                        </div>
+                    </div>
+
+
+                    <div class="bu" style="padding-left: 300px;">
+                        <button type="submit" (click)="save()" class="btn btn-primary">Save and Download</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

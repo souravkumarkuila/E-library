@@ -1,0 +1,57 @@
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-header text-center">
+            <b>Active Subscriptions List</b>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">Author: J. K Rowling</li>
+                        <li class="list-group-item">Category: Novel</li>
+                        <li class="list-group-item">Publisher: Potter More</li>
+                        <li class="list-group-item">Date Published : June 26, 1997</li>
+                        <li class="list-group-item">Points :200</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <p class="card-text">
+                        Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.
+                        The novels chronicle the lives of a young wizard, Harry Potter,
+                        and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of
+                        Witchcraft and Wizardry.
+                        The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends
+                        to become immortal,
+                        overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and
+                        Muggles (non-magical people).
+                    </p>
+                    <button class="btn btn-primary" id="readbtn" (click)="toggleSub()">
+                        {{ sub ? 'Close' : 'Continue Reading' }}
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="../../assets/harryimages.jpg" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div *ngIf="sub">
+    <div class="text-center mt-3">
+        <b>Historical Subscriptions List</b>
+    </div>
+
+
+    <div  class="card">
+        <div class="card-body text-center">
+            <div class="card">
+                <div class="card-body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

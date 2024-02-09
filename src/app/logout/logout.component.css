@@ -1,0 +1,46 @@
+.container{  
+    text-align: center;     
+    padding-top: 100px;  
+    }  
+    
+body {
+    background-color: rgb(83, 76, 171);
+    height: 600px;
+   }
+
+   .e-library-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding-top: 40px;
+  }
+  
+  .e-library-icon-2 {
+    width: 20px;
+    height: 20px; 
+  }
+  .e-library-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: -63px;
+  }
+  .powered-by {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 259px;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .capgemni{
+    display: inline-flex;
+    align-items: center;
+    padding-left: 270px;
+    
+  }

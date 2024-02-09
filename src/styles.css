@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+/* styles.css */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar {
+    background-color: #444;
+    color: rgb(67, 16, 219);
+    padding:10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar li {
+    margin-left: 30px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  element.style {
+    box-sizing: border-box;
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+  

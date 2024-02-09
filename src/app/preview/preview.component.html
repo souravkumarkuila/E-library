@@ -1,0 +1,104 @@
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-header text-center">
+            <b> H & The Half Blood Prince (Preview)
+            </b>
+
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-3">
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Author: Lakshmi</li>
+                        <li class="list-group-item">Category: Novel</li>
+                        <li class="list-group-item">Publisher: Potter More</li>
+                        <li class="list-group-item">Date Published : June 26, 1997</li>
+                        <li class="list-group-item">Points :200</li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-md-6">
+                    <p class="card-text">
+                        Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.
+                        The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger
+                        and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry.
+                        The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends
+                        to become immortal, overthrow the wizard governing body known as the Ministry of Magic and
+                        subjugate all wizards and Muggles(non-magical people).
+                    </p>
+                    <button class="btn btn-primary" id="readbtn" *ngIf="!sub" (click)="sub=true">Read more</button>
+                    <button class="btn btn-primary" id="readbtn" *ngIf="sub" (click)="sub=false">Close</button>
+                    <button class="btn btn-primary" (click)="openPopup()">Recommend to a Colleague</button>
+
+                </div>
+                <div class="col-md-2">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="../../assets/harryimages.jpg" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="sub" class="card">
+
+        <div class="card-body text-center">
+            <h5 class="card-title">Harry Potter & The Half-Blood Prince(plot)</h5>
+            <p class="card-text">The central character in the series is Harry Potter, a boy who lives in the fictional
+                town of Little Whinging,
+                Surrey with his aunt, uncle, and cousin the Dursleys and discovers at the age of eleven that he is a
+                wizard,
+                though he lives in the ordinary world of non-magical people known as Muggles.
+                [8] The wizarding world exists parallel to the Muggle world, albeit hidden and in secrecy.
+                His magical ability is inborn, and children with such abilities are invited to attend exclusive magic
+                schools that teach the necessary skills to succeed in the wizarding world.
+                [9]​Harry becomes a student at Hogwarts School of Witchcraft and Wizardry, a wizarding academy in
+                Scotland, and it is here where most of the events in the series take place.
+                As Harry develops through his adolescence, he learns to overcome the problems that face him: magical,
+                social, and emotional, including ordinary teenage challenges such as friendships,
+                infatuation, romantic relationships, schoolwork and exams, anxiety, depression, stress, and the greater
+                test of preparing himself for the confrontation that lies ahead in wizarding Britain's
+                increasingly-violent second wizarding war.[10]​
+                Each novel chronicles one year in Harry's life[11] during the period from 1991 to 1998.[12] The books
+                also contain many flashbacks, which are frequently experienced by Harry viewing the memories of other
+                characters in a device called a Pensieve.​
+                The environment Rowling created is intimately connected to reality. The British magical community of the
+                Harry Potter books is inspired by 1990s British culture.
+                ​</p>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Recommend</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+
+                        <input type="email" id="emailInput" class="form-control" placeholder="Enter your email"
+                            maxlength="30">
+                    </div>
+                    <div id="successPopup" class="popup" style="display: none;">
+                        Thank you for your recommendation!
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" (click)="submitForm()">
+                        Submit
+                    </button>
+                    <button type="button" class="btn btn-primary" (click)="closePopup()">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>

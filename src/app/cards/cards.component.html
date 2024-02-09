@@ -1,0 +1,45 @@
+<div class="card-container">
+  <!-- First Card -->
+  <div class="card">
+    <div class="card-body">
+      <div class="title">Total Points</div>
+
+      <div class="user">
+        <div class="user-name">Points scored by subscriptions</div>
+        <div class="circle">
+          <div class="circle-content">
+            {{totalPoint}}
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- second Card -->
+  <div class="card">
+    <div class="card-body">
+      <div class="title">Books Subscribed</div>
+
+      <div class="user">
+        <div class="user-name">Number of books read.</div>
+        <div class="circle-2">
+          {{bookSubscriptions}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third Card -->
+  <div routerLink="/container/subs" class="card">
+    <div class="card-body">
+      <div class="title">Active Subscriptions</div>
+
+      <div class="user">
+        <div class="user-name">Number of books currently reading</div>
+        <div class="circle-3">
+          {{activeSubscriptions}}
+        </div>
+      </div>
+    </div>
+  </div>

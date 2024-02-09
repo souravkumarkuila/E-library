@@ -1,0 +1,19 @@
+/* Adjust the card body height to match both sides */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #beb8d7; 
+  }
+  
+  /* Vertically align the image to the top-right corner */
+  .card-title + img {
+    align-self: flex-start;
+  }
+  
+  /* Ensure the paragraph takes up available space */
+  .card-text {
+    flex: 1;
+  }
+  
