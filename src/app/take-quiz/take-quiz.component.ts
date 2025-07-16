@@ -40,7 +40,7 @@ export class TakeQuizComponent implements OnInit {
  
 
   }
-
+// take quiz 
   takeQuiz(bookId: any) {
     this.quizCompleted=false
     this.book= this.books.find((book:any)=>book.bookId===bookId).title
@@ -54,7 +54,7 @@ export class TakeQuizComponent implements OnInit {
 
     this.cdr.detectChanges();
   }
-
+// next question
   nextQuestion() {
     if (this.selectedOptionIndex !== null) {
       const currentQuestion = this.questions[this.currentQuestionIndex];
