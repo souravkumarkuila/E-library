@@ -5,13 +5,12 @@
     <h1 class="e-library-text">E-Library</h1>
 
   </div>
-  <div class="capgemni">
+  <!-- <div class="capgemni">
     <h1 style="padding-right: 5px;" class="powered-by">Powered by Capgemini</h1>
     <img src="../../assets/cap logo.jpg" alt="Cap-logo Icon" class="e-library-icon-2">
-  </div>
-  <form [formGroup]="loginForm" class="login-form">
+  </div> -->  <form [formGroup]="loginForm" class="login-form">
     <div class="form-group">
-      <label for="email">Email</label>
+      <label for="email">Email</label> 
       <input type="email" id="email" formControlName="email" class="form-control">
       <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
         <div *ngIf="email.errors?.required">Email is required.</div>
